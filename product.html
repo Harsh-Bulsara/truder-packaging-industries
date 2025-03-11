@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truder Packaging</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Apply main styles -->
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.getElementById("mobile-menu");
+        const navList = document.querySelector(".nav-list");
+
+        // Toggle menu visibility
+        menuToggle.addEventListener("click", function () {
+            navList.classList.toggle("active");
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll(".nav-list a").forEach(link => {
+            link.addEventListener("click", function () {
+                navList.classList.remove("active");
+            });
+        });
+    });
+</script>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Truder Packaging Logo">
+            </div>
+
+            <!-- Mobile Menu Icon -->
+        <div class="menu-toggle" id="mobile-menu">
+            ☰
+        </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="product.html" class="active">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Product Hero Section -->
+<section class="hero product-hero">
+    <div class="hero-content">
+        <h1>PRODUCTS</h1>
+        <h2><span class="highlight">PACKAGING PARTNER</span></h2>
+        <p>Innovation & Excellence in Plastic Manufacturing</p>
+        <a href="#" class="cta-button">
+            <img src="images/phone-icon.png" alt="Phone Icon"> Contact Us Now
+        </a>
+    </div>
+    <div class="hero-product-image">
+        <img src="images/product-hero-image.png" alt="About Us Illustration" class="main-hero">
+    </div>
+</section>
+
+<!-- Products Section -->
+<section class="products">
+    <div class="container">
+        <!-- Product 1 - Image Left -->
+        <div class="product left">
+            <div class="product-image">
+                <img src="images/product1.png" alt="Eco-Friendly Packaging">
+            </div>
+            <div class="product-text">
+                <h3>EcoFriendly Compostable Products</h3>
+                <p>Our range of compostable products is crafted from starch-based raw materials, making them a sustainable and eco-friendly alternative to plastic. Designed to break down naturally, they are available in both home and industrial composting options, ensuring minimal environmental impact.
+                    Let me know if you’d like further refinements!</p>
+            </div>
+        </div>
+
+        <!-- Product 2 - Image Right -->
+        <div class="product right">
+            <div class="product-image">
+                <img src="images/product2.png" alt="Security Packaging">
+            </div>
+            <div class="product-text">
+                <h3>Secure & Efficient Packaging</h3>
+                <p>Ensure tamper-proof protection to reduce fraud in transit. Barcode tracking for traceability. 
+                    Extra strength to hold multiple bottles. 
+                    Co-branding to cut costs. 
+                    Compliant with global packaging standards
+                    Available with bubble protection for added safety</p>
+            </div>
+            
+        </div>
+
+        <!-- Product 3 - Image Left -->
+        <div class="product left">
+            <div class="product-image">
+                <img src="images/product3.png" alt="Printed Packaging Rolls">
+            </div>
+            <div class="product-text">
+                <h3>Durable & Cost-Effective Packaging Films</h3>
+                <p>Our 3-layer co-extruded LDPE, MDPE, and LLDPE films are a popular corrugated box replacement for bundling bottles, cans, and tetra packs. With high clarity from 50 microns onwards, they provide significant cost savings over traditional packaging methods.</p>
+            </div>
+        </div>
+
+        <!-- Product 4 - Image Right -->
+        <div class="product right">
+            <div class="product-image">
+                <img src="images/product4.png" alt="Custom Printed Carry Bags">
+            </div>
+            <div class="product-text">
+                <h3>Convenient & Spacious Handle Bags</h3>
+                <p>Our external flexible handle bags are designed for more storage and easy carrying. Perfect for retail, trade shows, seminars, and promotions, these bags feature internally attached flexible handles for enhanced comfort and convenience.</p>
+            </div>
+        </div>
+
+        <!-- Product 5 - Image Left -->
+        <div class="product left">
+            <div class="product-image">
+                <img src="images/product5.png" alt="Food Packaging">
+            </div>
+            <div class="product-text">
+                <h3>Eco-Friendly PE/PE Bags & Rolls</h3>
+                <p>Our PE/PE bags & rolls are 100% recyclable, thanks to their mono-material structure. Designed for sustainability, they serve as an excellent alternative to conventional laminates that are difficult to recycle.</p>
+            </div>
+        </div>
+
+        <!-- Product 6 - Image Right -->
+        <div class="product right">
+            <div class="product-image">
+                <img src="images/product6.png" alt="Premium Black Courier Bags">
+            </div>
+            <div class="product-text">
+                <h3>Durable & Secure Bubble Mailers</h3>
+                <p>Made from high-strength polymers, our bubble mailers are tear and weather-resistant. With a permanent adhesive seal, they are ideal for online shopping deliveries and various industries. Widely used by courier, parcel, and e-commerce companies, they ensure cushioned protection during transit.</p>
+            </div>
+            
+        </div>
+
+        <!-- Product 7 - Image Left -->
+        <div class="product left">
+            <div class="product-image">
+                <img src="images/product7.png" alt="Fashion Packaging">
+            </div>
+            <div class="product-text">
+                <h3>Lightweight & Secure Poly Mailers</h3>
+                <p>Our poly mailers are designed for the safe and reliable transport of documents and consignments, making them the preferred choice for courier, parcel, and e-commerce companies.
+                    Durable & tear-resistant for added security.
+                    Ideal for online retailers, logistics providers, and businesses, these mailers ensure cost-effective and efficient packaging.</p>
+            </div>
+        </div>
+
+        <!-- Product 8 - Image Right -->
+        <div class="product right">
+            <div class="product-image">
+                <img src="images/product8.png" alt="Branded Flour Packaging">
+            </div>
+            <div class="product-text">
+                <h3>Durable & Versatile Side Seal Bags</h3>
+                <p>Our side seal bags feature heat-sealed edges with a folded bottom, ensuring strength and durability. They can be customized with handles, air holes, and bottom gussets before the sealing process, offering various design variations.
+                    Perfect for retail, food, and industrial packaging, these bags provide a reliable and efficient solution.</p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Logo and Company Name -->
+        <div class="footer-logo">
+            <img src="images/logo-footer.png" alt="Truder Packaging Industries Logo">
+        </div>
+
+        <!-- Wrapper for Footer Sections -->
+        <div class="footer-sections-wrapper">
+            <!-- Contact Information -->
+            <div class="footer-section">
+                <h3>CONTACT US</h3>
+                <div class="footer-line"></div>
+                <p><img src="images/map-icon.png" alt="Location"> Address - 882/5/A Makarpura GIDC Industrial Estate, Vadodara, Gujarat-390010</p>
+                <p><img src="images/phone-icon2.png" alt="Phone"> Phone: +91 9408342280</p>
+                <p><img src="images/email-icon.png" alt="Email"> Email: <a href="mailto:Mail@truderpackaging.com">Mail@truderpackaging.com</a></p>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-section">
+                <h3>FOLLOW US</h3>
+                <div class="footer-line"></div>
+                <p><img src="images/facebook-icon.png" alt="Facebook"> <a href="#">MeenaPlastic@facebook.com</a></p>
+                <p><img src="images/youtube-icon.png" alt="YouTube"> MeenaPlastic</p>
+                <p><img src="images/whatsapp-icon.png" alt="WhatsApp"> +91 94083 42280</p>
+                <p><img src="images/instagram-icon.png" alt="Instagram"> MeenaPlastic037</p>
+            </div>
+
+            <!-- Working Hours -->
+            <div class="footer-section">
+                <h3>WORKING HOURS</h3>
+                <div class="footer-line"></div>
+                <p>MONDAY - SATURDAY <img src="images/clock-icon.png" alt="Clock"> 9:00am - 5:00pm</p>
+                <p>SUNDAY <strong>CLOSED</strong></p>
+            </div>
+        </div>
+        <!-- Copyright & Developer Section -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <img src="images/footer-icon.png" alt="Footer Logo">
+                <p>©2025 Truder Packaging. All Rights Reserved.</p>
+            </div>
+            <div class="footer-bottom-right">
+                <p>Site Developed by <a href="https://mamotechnolabs.com" target="_blank">MaMo Technolabs LLP</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

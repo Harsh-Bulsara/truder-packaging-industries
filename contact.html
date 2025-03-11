@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truder Packaging</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Apply main styles -->
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.getElementById("mobile-menu");
+        const navList = document.querySelector(".nav-list");
+
+        // Toggle menu visibility
+        menuToggle.addEventListener("click", function () {
+            navList.classList.toggle("active");
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll(".nav-list a").forEach(link => {
+            link.addEventListener("click", function () {
+                navList.classList.remove("active");
+            });
+        });
+    });
+</script>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Truder Packaging Logo">
+            </div>
+
+            <!-- Mobile Menu Icon -->
+        <div class="menu-toggle" id="mobile-menu">
+            ☰
+        </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section -->
+<section class="hero about-hero">
+    <div class="hero-content">
+        <h1>CONTACTS</h1>
+        <h2><span class="highlight">PACKAGING SOLUTIONS</span></h2>
+        <p>Support, Orders, and More...</p>
+        <a href="#" class="cta-button">
+            <img src="images/phone-icon.png" alt="Phone Icon"> Contact Us Now
+        </a>
+    </div>
+    <div class="hero-about-image">
+        <img src="images/contact-hero-image.png" alt="About Us Illustration" class="main-hero">
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section class="contact-container">
+        <!-- Left: Contact Form -->
+        <div class="contact-form">
+            <h2>Get In Touch</h2>
+            <form>
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="E-Mail" required>
+                <input type="text" placeholder="Website">
+                <textarea placeholder="Message" rows="3" required></textarea>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </div>
+
+        <!-- Right: Map & Contact Details -->
+        <div class="contact-info">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.881676304926!2d73.15284907502954!3d22.340200979722522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc62dfaaa8d33%3A0xabc123456789!2sTruder%20Packaging%20Industries!5e0!3m2!1sen!2sin!4v1234567890123" 
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+
+            <!-- Contact Details Boxes -->
+            <div class="contact-details">
+                <div class="box">
+                    <h3>Address:</h3>
+                    <p>882, 5 Makarpura GIDC, Makarpura, Vadodara, Gujarat 390010</p>
+                    <img src="images/address-icon.png" alt="Address Icon" class="icon">
+                </div>
+                <div class="box">
+                    <h3>Contact:</h3>
+                    <p>info@truderpackaging.com</p>
+                    <p>099048 70418</p>
+                    <img src="images/contact-icon.png" alt="Contact Icon" class="icon">
+                </div>
+                <div class="box">
+                    <h3>Business Hours:</h3>
+                    <p>Monday - Saturday: 9:00am to 5:00pm</p>
+                    <p>Sunday: Closed</p>
+                    <img src="images/hours-icon.png" alt="Business Hours Icon" class="icon">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Logo and Company Name -->
+        <div class="footer-logo">
+            <img src="images/logo-footer.png" alt="Truder Packaging Industries Logo">
+        </div>
+
+        <!-- Wrapper for Footer Sections -->
+        <div class="footer-sections-wrapper">
+            <!-- Contact Information -->
+            <div class="footer-section">
+                <h3>CONTACT US</h3>
+                <div class="footer-line"></div>
+                <p><img src="images/map-icon.png" alt="Location"> Address - 882/5/A Makarpura GIDC Industrial Estate, Vadodara, Gujarat-390010</p>
+                <p><img src="images/phone-icon2.png" alt="Phone"> Phone: +91 9408342280</p>
+                <p><img src="images/email-icon.png" alt="Email"> Email: <a href="mailto:Mail@truderpackaging.com">Mail@truderpackaging.com</a></p>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-section">
+                <h3>FOLLOW US</h3>
+                <div class="footer-line"></div>
+                <p><img src="images/facebook-icon.png" alt="Facebook"> <a href="#">MeenaPlastic@facebook.com</a></p>
+                <p><img src="images/youtube-icon.png" alt="YouTube"> MeenaPlastic</p>
+                <p><img src="images/whatsapp-icon.png" alt="WhatsApp"> +91 94083 42280</p>
+                <p><img src="images/instagram-icon.png" alt="Instagram"> MeenaPlastic037</p>
+            </div>
+
+            <!-- Working Hours -->
+            <div class="footer-section">
+                <h3>WORKING HOURS</h3>
+                <div class="footer-line"></div>
+                <p>MONDAY - SATURDAY <img src="images/clock-icon.png" alt="Clock"> 9:00am - 5:00pm</p>
+                <p>SUNDAY <strong>CLOSED</strong></p>
+            </div>
+        </div>
+        <!-- Copyright & Developer Section -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <img src="images/footer-icon.png" alt="Footer Logo">
+                <p>©2025 Truder Packaging. All Rights Reserved.</p>
+            </div>
+            <div class="footer-bottom-right">
+                <p>Site Developed by <a href="https://mamotechnolabs.com" target="_blank">MaMo Technolabs LLP</a></p>
+            </div>
+        </div>
+    </div>
+</footer>

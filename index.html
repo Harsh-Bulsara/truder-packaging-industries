@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truder Packaging</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const menuToggle = document.getElementById("mobile-menu");
+        const navList = document.querySelector(".nav-list");
+
+        // Toggle menu visibility
+        menuToggle.addEventListener("click", function () {
+            navList.classList.toggle("active");
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll(".nav-list a").forEach(link => {
+            link.addEventListener("click", function () {
+                navList.classList.remove("active");
+            });
+        });
+    });
+</script>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Truder Packaging Logo">
+            </div>
+
+            <!-- Mobile Menu Icon -->
+        <div class="menu-toggle" id="mobile-menu">
+            ☰
+        </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>YOUR TRUSTED</h1>
+            <h2><span class="highlight">PACKAGING MANUFACTURER</span></h2>
+            <p>Carry Bags, Branded Bags and More...</p>
+            <a href="#" class="cta-button">
+                <img src="images/phone-icon.png" alt="Phone Icon"> Contact Us Now
+            </a>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero-image.png" alt="Shopping Illustration" class="main-hero">
+            <img src="images/shopping-bag-modulo.png" alt="Shopping Bag with Modulo Icon" class="hero-bag-image">
+        </div>
+        
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <div class="about-content">
+            <h2>ABOUT US</h2>
+            <h3>WHO WE ARE</h3>
+            <p>Truder Packaging is a leading plastic bag manufacturing company, renowned for its commitment to quality and innovation. With a focus on sustainability, we offer a diverse range of reliable and eco-friendly packaging solutions to meet the evolving needs of businesses across various industries.</p>
+
+            <h3>MISSION & VISION</h3>
+            <p>Our mission is to deliver top-notch plastic bag solutions that combine innovation, quality, and sustainability. We aim to empower businesses with packaging that not only meets their needs but also contributes to a greener future.</p>
+
+            <h3>OUR STRATEGY</h3>
+            <p>Our strategy revolves around leveraging cutting-edge technology and sustainable practices to create versatile plastic bag solutions...</p>
+
+            <a href="#" class="read-more-button">
+                <img src="images/book-icon.png" alt="Read More"> Read More
+            </a>
+        </div>
+        <div class="about-image">
+            <img src="images/about-image.png" alt="Manufacturing Illustration">
+        </div>
+    </section>
+
+    <!-- Why Truders Section -->
+    <section class="why-truders">
+        <div class="why-content">
+            <h2>WHY TRUDERS</h2>
+
+            <h3>QUALITY</h3>
+            <p>At Truder Packaging, we are dedicated to excellence in plastic manufacturing. Our products stand as a testament to our unwavering commitment to quality.</p>
+
+            <h3>RANGE</h3>
+            <p>Truder Packaging excels in producing a versatile range of top-notch plastic products. Our commitment to quality ensures that each item, within our wide spectrum of offerings, is crafted with precision and reliability at its core.</p>
+
+            <h3>CAPACITY</h3>
+            <p>At Truder Packaging, our production capacity stands as a testament to our capability and commitment. With state-of-the-art facilities and efficient processes, we ensure a robust manufacturing capacity that meets the demands of our diverse clientele.</p>
+        </div>
+        <div class="why-image">
+            <img src="images/why-truders.png" alt="Manufacturing Process Illustration">
+        </div>
+    </section>
+
+    <!-- Key Values Section -->
+<section class="key-values">
+    <div class="value">
+        <img src="images/originality-icon.png" alt="Originality">
+        <h3>Originality</h3>
+    </div>
+    <div class="value">
+        <img src="images/collaboration-icon.png" alt="Collaboration">
+        <h3>Collaboration</h3>
+    </div>
+    <div class="value">
+        <img src="images/infrastructure-icon.png" alt="Infrastructure">
+        <h3>Infrastructure</h3>
+    </div>
+</section>
+
+<!-- Location Section -->
+<section class="location">
+    <div class="map-container">
+        <!-- Info Box -->
+        <div class="map-info">
+            <h3>Truder Packaging Industries</h3>
+            <p>882/5/A, Makarpura GIDC, Makarpura, Vadodara, Gujarat 390010</p>
+            <div class="rating">
+                <span>⭐ 5.0 (7 reviews)</span>
+            </div>
+            <a href="https://goo.gl/maps/some-link" target="_blank" class="map-link">View larger map</a>
+        </div>
+
+        <!-- Embedded Google Map -->
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117571.43793885866!2d73.11819408929537!3d22.276046480889376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc8a810d7e0a1%3A0xbbe1a321f4c7e2b1!2sTruder%20Packaging%20Industries!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin" 
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</section>
+
+<!-- Swachh Bharat Section -->
+<section class="swachh-bharat">
+    <div class="swachh-content">
+        <img src="images/swachh-bharat.png" alt="Swachh Bharat">
+        <img src="images/throw-trash.png" alt="Proper Disposal">
+        <img src="images/recycle-icon.png" alt="Recycling">
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Logo and Company Name -->
+        <div class="footer-logo">
+            <img src="images/logo-footer.png" alt="Truder Packaging Industries Logo">
+        </div>
+
+        <!-- Wrapper for Footer Sections -->
+        <div class="footer-sections-wrapper">
+            <!-- Contact Information -->
+            <div class="footer-section">
+                <h3>CONTACT US</h3>
+                <div class="footer-line"></div>
+                <p><img src="images/map-icon.png" alt="Location"> Address - 882/5/A Makarpura GIDC Industrial Estate, Vadodara, Gujarat-390010</p>
+                <p><img src="images/phone-icon2.png" alt="Phone"> Phone: +91 9408342280</p>
+                <p><img src="images/email-icon.png" alt="Email"> Email: <a href="mailto:Mail@truderpackaging.com">Mail@truderpackaging.com</a></p>
+            </div>
+
+            <!-- Social Media Links -->
+            <div class="footer-section">
+                <h3>FOLLOW US</h3>
+                <div class="footer-line"></div>
+                <p><img src="images/facebook-icon.png" alt="Facebook"> <a href="#">MeenaPlastic@facebook.com</a></p>
+                <p><img src="images/youtube-icon.png" alt="YouTube"> MeenaPlastic</p>
+                <p><img src="images/whatsapp-icon.png" alt="WhatsApp"> +91 94083 42280</p>
+                <p><img src="images/instagram-icon.png" alt="Instagram"> MeenaPlastic037</p>
+            </div>
+
+            <!-- Working Hours -->
+            <div class="footer-section">
+                <h3>WORKING HOURS</h3>
+                <div class="footer-line"></div>
+                <p>MONDAY - SATURDAY <img src="images/clock-icon.png" alt="Clock"> 9:00am - 5:00pm</p>
+                <p>SUNDAY <strong>CLOSED</strong></p>
+            </div>
+        </div>
+        <!-- Copyright & Developer Section -->
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <img src="images/footer-icon.png" alt="Footer Logo">
+                <p>©2025 Truder Packaging. All Rights Reserved.</p>
+            </div>
+            <div class="footer-bottom-right">
+                <p>Site Developed by <a href="https://mamotechnolabs.com" target="_blank">MaMo Technolabs LLP</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+</html>
